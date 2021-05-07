@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background: #0c0b09;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.banner {
+    width: 100%;
+    height: 30vh;
+}
+.navbar h1{
+    color: #fff;
+    margin: 0 0 0 30px;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(12, 11, 9, 0.6);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+    display: flex;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+    color: #cda45e;
+}
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    color: #444444;
+}
+.navbar .dropdown ul a i {
+    font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+    color: #cda45e;
+}
+.navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+button {
+  cursor: pointer;
+  margin: 0 30px 0 15px;
+  border: 2px solid #cda45e;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  background: transparent;
+}
+button:hover {
+    background: #cda45e;
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Regis
+--------------------------------------------------------------*/
+.box {
+    position: absolute;
+    width: 400px;
+    background-color: white;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 5px 5px 5px grey;
+}
+.header {
+    background-image: url(https://image.freepik.com/free-photo/wooden-table-looking-out-defocussed-room-interior_1048-11830.jpg);
+    background-size: cover;
+    padding: 90px 30px;
+    color: #cda45e;
+    border-radius: 15px 15px 0 0;
+}
+.header p {
+    font-size: x-small;
+}
+.login-area {
+    text-align: left;
+    padding: 50px 50px 30px 50px;
+}
+.login-area a {
+    color: #cda45e;
+}
+.login-area a:hover {
+    color: #dba23e;
+    text-decoration: underline;
+}
+
+.username,
+.password {
+    width: 100%;
+    text-align: left;
+    padding: 13px 0;
+    border-radius: 5px;
+    outline: none;
+    border-color: #cda45e;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.username::placeholder,
+.password::placeholder {
+    color: #cda45e(255, 255, 255, .7);
+}
+
+.username:focus,
+.password:focus {
+    background-color: #cda45e;
+}
+
+.submit {
+    width: 290px;
+    padding: 10px;
+    background-color: #cda45e;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.submit:hover {
+    background-color: #dba23e;
+}
+
+
